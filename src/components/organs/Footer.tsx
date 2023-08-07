@@ -1,15 +1,15 @@
-import { Image } from '../atoms/Image';
-import logo from '../../assets/logo2.png';
+// import { Image } from '../atoms/Image';
+// import logo from '../../assets/logo2.png';
 import { Text } from '../atoms/Text';
-import { FooterTexts } from '../particles/DataLists';
-import { List } from '../atoms/List';
-import { Link } from 'react-router-dom';
-import {
-    FacebookLogo,
-    InstagramLogo,
-    TwitterLogo,
-} from '@phosphor-icons/react';
-import app from '../../assets/appdownload.png';
+// import { FooterTexts } from '../particles/DataLists';
+// import { List } from '../atoms/List';
+// import { Link } from 'react-router-dom';
+// import {
+//     FacebookLogo,
+//     InstagramLogo,
+//     TwitterLogo,
+// } from '@phosphor-icons/react';
+// import app from '../../assets/appdownload.png';
 
 const Footer = () => {
     return (
