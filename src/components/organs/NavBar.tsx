@@ -1,24 +1,24 @@
 import { useState, useEffect } from 'react';
 import { Image } from '../atoms/Image';
-import { Button } from '../atoms/Button';
+// import { Button } from '../atoms/Button';
 import Logo from '../../assets/logo1.png';
-import { NavButtons, NavLinks } from '../particles/DataLists';
-import { List } from '../atoms/List';
-import { NavLink, useNavigate } from 'react-router-dom';
-import { ArrowCircleRight, CirclesFour } from '@phosphor-icons/react';
+// import { NavButtons, NavLinks } from '../particles/DataLists';
+// import { List } from '../atoms/List';
+// import { useNavigate } from 'react-router-dom';
+// import { ArrowCircleRight, CirclesFour } from '@phosphor-icons/react';
 import { Slide } from 'react-awesome-reveal';
 import { Text } from '../atoms/Text';
 
 const NavBar = () => {
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
 
-    const [open, setOpen] = useState(false);
+    // const [open, setOpen] = useState(false);
     // const [scrollY, setScrollY] = useState(0)
     const [navBarColor, setNavBarColor] = useState(false);
 
-    const handleToggle = () => {
-        setOpen(!open);
-    };
+    // const handleToggle = () => {
+    //     setOpen(!open);
+    // };
 
     const listenScrollEvent = () => {
         window.scrollY > 10 ? setNavBarColor(true) : setNavBarColor(false);
@@ -46,7 +46,7 @@ const NavBar = () => {
                         image={Logo}
                         alt='Logo'
                     /> */}
-                    <Text>MANGALAM & CO</Text>
+                    <Text className=''>MANGALAM & CO</Text>
                     {/* <div className="lg:flex hidden items-center gap-20">
                         <ul className="flex items-center justify-center gap-8">
                             {
@@ -90,14 +90,10 @@ const NavBar = () => {
 
             {/* Mobile Nav  */}
             <nav
-                className={`flex justify-end lg:hidden h-screen w-full bg-gray-950/90 fixed top-0  ${
-                    open ? 'right-0' : '-right-[120vw]'
-                } transition-all duration-500 ease-out`}
+                className={`flex justify-end lg:hidden h-screen w-full bg-gray-950/90 fixed top-0  ${'right-0'} transition-all duration-500 ease-out`}
             >
                 <div
-                    className={`w-[70%] h-screen bg-white flex flex-col justify-between items-center relative ${
-                        open ? 'right-0' : '-right-[120vw]'
-                    } transition-all duration-500 ease-out delay-300`}
+                    className={`w-[70%] h-screen bg-white flex flex-col justify-between items-center relative ${'right-0'} transition-all duration-500 ease-out delay-300`}
                 >
                     <section className='w-full px-4 py-6 flex flex-col gap-16'>
                         <div className='w-full flex justify-between items-center'>
